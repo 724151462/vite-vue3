@@ -15,7 +15,7 @@ export default defineComponent({
     setup() {
         return () => {
             return <div class="root">
-                        Hellow Vue3 {a.name}
+                        Hellow~ Vue3 {a.name}
                         <img src={logo} alt="" />
                     </div>
         }
