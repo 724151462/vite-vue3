@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "esnext", // 指定编译后的ECMAScript版本
+      "module": "esnext", // 指定要使用的模板标准
+      "moduleResolution": "node",//用于选择模块解析策略，有'node'和'classic'两种类型
+      "strict": true,
+      "jsx": "preserve",
+      "sourceMap": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "lib": [
+        "esnext",
+        "dom"
+        ],
+      "isolatedModules": true
+    },
+    "include": [
+      "src/**/*.ts",
+    ],
+    // 不编译某些文件
+    "exclude": [
+      "node_modules",
+    ]
+  }
