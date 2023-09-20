@@ -1,4 +1,4 @@
-@import url('./other.css');
+@import url('@styles/other.css');
 
 :root {
     --main-bg-color: orange;

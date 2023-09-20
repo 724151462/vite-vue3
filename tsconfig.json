@@ -4,14 +4,16 @@
       "module": "esnext", // 指定要使用的模板标准
       "moduleResolution": "node",//用于选择模块解析策略，有'node'和'classic'两种类型
       "strict": true,
-      "jsx": "preserve",
+      "jsx": "preserve", // vue不遵循react的规范，所以不编译jsx，留给插件编译
       "sourceMap": true,
       "resolveJsonModule": true,
       "esModuleInterop": true,
+      "skipLibCheck": true, // 引入的一些依赖包不进行类型校验
       "lib": [
         "esnext",
         "dom"
         ],
+      "types": ["vite/client"], // 环境变量/静态资源/hot等
       "isolatedModules": true
     },
     "include": [
